@@ -134,7 +134,5 @@ def upload_file():
     </html>
     '''
 
-if __name__ == '_main_':
-    app.run(debug=True)
-
-#TESTE
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
