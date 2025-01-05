@@ -3,7 +3,7 @@ from flask import Flask, request, send_file
 from PIL import Image
 import tempfile
 
-app = Flask(_name_)
+app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 
 # Cria a pasta de upload se não existir
@@ -134,7 +134,7 @@ def upload_file():
     </html>
     '''
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
 
 #TESTE
